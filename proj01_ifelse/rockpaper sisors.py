@@ -1,5 +1,5 @@
 loop_control=0
-while loop_control=0
+while loop_control==0:
     p1=raw_input("player 1 enter rock, paper, or scissors")
     p2=raw_input("player 2 enter rock, paper, or scissors")
     if p1=="rock" and p2=="scissors":
@@ -22,3 +22,8 @@ while loop_control=0
         print "player 2 won"
     else:
         print "incorrect spelling"
+    q=raw_input("would you like to keep playing? yes or no")
+    if q=="yes":
+        loop_control=0
+    elif q=="no":
+        loop_control=1
