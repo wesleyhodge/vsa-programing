@@ -1,4 +1,7 @@
 import random
+name=raw_input("what is your name?")
+name=name.lower()
+print "hello " + name + " pleased to meet you."
 hayd=raw_input("how are you? (good, bad, ok, awesome, horrible)")
 hayd=hayd.lower()
 if hayd=="good":
@@ -73,5 +76,8 @@ while loop_control==0:
     q=raw_input("would you like to keep playing? (lower case)(yes or no)")
     if q=="yes" or q=="yea" or q=="yeah" or q=="sure" or q=="ok":
         loop_control=0
+    elif q=="no":
+        print "bye"
+        loop_control=1
     else:
         loop_control=1
