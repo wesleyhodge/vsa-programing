@@ -33,7 +33,7 @@ while loop_control==0:
         print "computer won"
     else:
         print "incorrect spelling"
-    q=raw_input("would you like to keep playing? (lower case)")
+    q=raw_input("would you like to keep playing? (lower case)(yes or no)")
     if q=="yes" or q=="yea" or q=="yeah" or q=="sure" or q=="ok":
         loop_control=0
     elif q=="no" or q=="nope" or q=="exit":
