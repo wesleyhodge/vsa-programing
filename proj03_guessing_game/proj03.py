@@ -12,9 +12,10 @@ Keep track of how many guesses the user has taken, and when the game ends, print
 
 """
 import random
-answer = random.randint(1,9)
-loop=4
-d=4
+t=int(raw_input("what do you want the top number to guess to be"))
+answer = random.randint(1,t)
+loop=int(raw_input("how many guesses do you want"))
+d=loop
 while loop != 0:
     guess=raw_input("guess a number")
     if guess=="exit":
