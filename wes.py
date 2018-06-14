@@ -9,6 +9,12 @@ if hayd=="good":
 elif hayd=="bad" or hayd=="horrible":
     print "that is not good"
     print "just relax"
+    wer=raw_input("why are you having a bad day?(stress or just a bad day) ")
+    if wer=="stress":
+        print "Imagine locking all of the worries and your stress in to a tight box and not letting them out until"
+        print " you are ready."
+    else:
+        print "I don't have a speech about that so, oh well."
 elif hayd=="awesome":
     print "that is great"
 else:
@@ -23,6 +29,11 @@ if why=="no":
     h=raw_input("have you played on a game boy?(yes, no, or what is a game boy)")
     if h=="yes":
         print "ok"
+        er12=raw_input("do you like it?(yes or no)")
+        if er12=="yes":
+            print "me too"
+        else:
+            print "ok"
     elif h=="no":
         print "you should try it out"
     elif h=="what is a game boy":
