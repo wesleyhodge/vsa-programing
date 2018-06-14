@@ -8,6 +8,7 @@ if hayd=="good":
     print "I am glad you are having a good day"
 elif hayd=="bad" or hayd=="horrible":
     print "that is not good"
+    print "just relax"
 elif hayd=="awesome":
     print "that is great"
 else:
