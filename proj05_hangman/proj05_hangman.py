@@ -46,3 +46,46 @@ def choose_word(wordlist):
 wordlist = load_words()
 
 # your code begins here!
+w12=choose_word(wordlist)
+word=[]
+blank=[]
+us=["_"]
+abc=string.lowercase
+for letter in w12:
+    word.append(letter)
+q=0
+while q<len(word):
+    for letter in us:
+        blank.append(letter)
+    q=q+1
+print "welcome to hangman"
+print "I am thinking of a word " + str(len(word)) + " characters long"
+r=0
+lost=0
+while r<8:
+    print "you have not guessed " + str(abc)
+    print "you have " + str(8-r) + " guesses left"
+    print blank
+    guess=raw_input("guess a letter")
+    abc=abc.replace(guess, "")
+    d=0
+    a=0
+    for letter in word:
+        if guess==letter:
+            blank[d]=guess
+            print "that is the correct letter"
+        else:
+            a=a+1
+        d=d+1
+    if a==len(word):
+        print "that is not in the letter"
+        r = r+1
+        lost = lost+1
+    elif blank == word:
+        print "you got it that is the word, you won"
+        r = 8
+if lost == 8:
+    print "you lost, you ran out of guesses it was "
+    print w12
+
+
