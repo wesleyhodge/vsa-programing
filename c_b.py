@@ -22,4 +22,51 @@
 
 
 import random
+cows=0
+bulls=0
+r=1
+l1=[]
+l2=[]
+g=0
 number = str(random.randint(1000,9999)) #random 4 digit number
+while r!=0:
+    cows = 0
+    bulls = 0
+    l1=[]
+    l2=[]
+    for letter in number:
+        l2.append(letter)
+    guess=raw_input("guess a 4 digit number or exit by typing exit")
+    if guess=="exit":
+        r=0
+    else:
+        c=0
+        for letter in guess:
+            l1.append(letter)
+        for x in range(0,4):
+            if l1[x]==l2[x]:
+                l1[x]="%"
+                l2[x]="*"
+                cows=cows+1
+        for letter in l1:
+            c=0
+            for idem in l2:
+                if letter==idem:
+                    bulls = bulls + 1
+                    letter="%"
+                    idem="*"
+                c=c+1
+        if cows==4:
+            print "you got it in"
+            print g
+            print "guesses"
+            r=0
+        else:
+            print "try again"
+            print "you have " + str(bulls) + " bulls " + str(cows) + " cows"
+        g=g+1
+
+
+
+
+
