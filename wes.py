@@ -1,7 +1,7 @@
 import random
 name=raw_input("what is your name?")
 name=name.lower()
-print "hello " + name + " pleased to meet you."
+print "hello " + name + ", pleased to meet you."
 hayd=raw_input("how are you? (good, bad, ok, awesome, horrible)")
 hayd=hayd.lower()
 if hayd=="good":
@@ -45,7 +45,7 @@ if c=="yes":
     print "I like it"
     d=raw_input("do you?(yes or no)")
     if d=="yes":
-        print "me too"
+        print "awesome"
     elif d=="no":
         print "ok"
 elif c=="no":
