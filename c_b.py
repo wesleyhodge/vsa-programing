@@ -36,7 +36,7 @@ while r!=0:
     l2=[]
     for letter in number:
         l2.append(letter)
-    guess=raw_input("guess a 4 digit number or exit by typing exit")
+    guess=raw_input("guess a 4 digit number or exit by typing exit: ")
     if guess=="exit":
         r=0
     else:
